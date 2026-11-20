@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brik — Boîte à outils du premier acheteur au Québec</title>
+<meta name="description" content="Brik aide les jeunes Québécois à acheter leur première propriété : budget réaliste, taux du jour, calculatrices, annonces suivies. Privé : vos données restent sur votre appareil ou dans votre Google Drive.">
+<link rel="icon" href="brik-icon.svg" type="image/svg+xml">
+<style>
+  :root { --bg:#eef1ee; --ink:#15201d; --ink2:#4b5853; --line:#d9e0dc; --verdigris:#1c7a68; --brick:#c0502e; --card:#fff; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0e1412; --ink:#e6eeea; --ink2:#a4b3ad; --line:#2a3632; --verdigris:#4db39e; --brick:#e0714a; --card:#151d1a; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { display:flex; align-items:center; gap:12px; }
+  header img { width:44px; height:44px; }
+  header b { font-size:26px; letter-spacing:-.02em; }
+  h1 { font-size: clamp(30px, 6vw, 46px); line-height:1.05; letter-spacing:-.03em; margin: 36px 0 12px; }
+  h2 { font-size: 20px; margin: 0 0 8px; }
+  p.lead { font-size: 18px; color: var(--ink2); max-width: 640px; }
+  .grid { display:grid; gap:14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); margin: 28px 0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; }
+  .card p { margin:0; color:var(--ink2); font-size:15px; }
+  .wall { display:flex; gap:5px; margin: 8px 0 0; }
+  .wall i { width:34px; height:14px; border-radius:4px; background:var(--brick); display:block; }
+  .wall i:nth-child(3n) { background: var(--verdigris); }
+  a { color: var(--verdigris); }
+  footer { margin-top: 40px; padding-top: 16px; border-top:1px solid var(--line); font-size:14px; color:var(--ink2); display:flex; gap:18px; flex-wrap:wrap; }
+  hr { border:0; border-top:1px solid var(--line); margin: 40px 0; }
+</style>
+</head>
+<body>
+<main>
+  <header><img src="brik-icon.svg" alt=""><b>Brik</b></header>
+
+  <h1>Votre première maison, brique par brique.</h1>
+  <p class="lead">Brik est une application gratuite pour Windows, macOS et Android qui aide les jeunes Québécois à acheter leur première propriété : ce que vous pouvez vraiment payer, les taux et les prix du jour, et chaque étape jusqu’au notaire.</p>
+  <div class="wall" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+  <div class="grid">
+    <div class="card"><h2>Rapport du jour</h2><p>Taux hypothécaires de la Banque du Canada, prix médians Centris (APCIQ) de votre région et suivi des annonces qui vous intéressent.</p></div>
+    <div class="card"><h2>Votre vrai budget</h2><p>Salaire brut ou net, épargne par compte (CELIAPP, RAP, CELI…), test de résistance, prime SCHL et taxe de bienvenue avec le crédit 2026.</p></div>
+    <div class="card"><h2>14 calculatrices</h2><p>Capacité d’emprunt, paiements, frais de clôture, CELIAPP, RAP, louer ou acheter, plex, construction neuve et plus.</p></div>
+    <div class="card"><h2>Privé par conception</h2><p>Aucun serveur Brik, aucun pistage. Vos données restent sur votre appareil, ou dans votre propre Google Drive si vous le connectez.</p></div>
+  </div>
+
+  <p>Connexion Google facultative : Brik n’accède qu’au fichier qu’il crée dans un dossier « Brik » de votre Drive. Détails dans la <a href="privacy.html">politique de confidentialité</a>.</p>
+
+  <hr>
+
+  <h2 id="en" lang="en">In English</h2>
+  <p lang="en">Brik is a free app for Windows, macOS and Android that helps young Quebecers buy their first home: what you can really afford, today’s rates and prices, real listings you track, every Québec calculator, and a step-by-step guide to the notary. Brik has no server and no tracking: your data stays on your device, or in your own Google Drive if you connect it — Brik can only access the file it creates there. Read the <a href="privacy.html#en">privacy policy</a> and <a href="terms.html#en">terms of use</a>.</p>
+
+  <footer>
+    <a href="privacy.html">Politique de confidentialité / Privacy policy</a>
+    <a href="terms.html">Conditions d’utilisation / Terms of use</a>
+    <span>Contact : <a href="mailto:felix.poirierx9@gmail.com">felix.poirierx9@gmail.com</a></span>
+  </footer>
+</main>
+</body>
+</html>
